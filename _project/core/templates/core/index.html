@@ -1,0 +1,21 @@
+{% extends "core/generic.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+
+{% block content %}
+
+<form action="new-activity/" method="post">
+    <button>New Activity</button>
+</form>
+
+{% for activity in activities%}
+<div class="activityBox">
+    <h3>{{activity.name}}</h3>
+    <p>Time spent: {{activity.time_spent}}</p>
+    <form action="activity/{{activity.id}}/" method="post">
+        <button>Open</button>
+    </form>
+</div>
+{% endfor %}
+
+{% endblock %}

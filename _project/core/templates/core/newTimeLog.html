@@ -1,0 +1,19 @@
+{% extends "core/generic.html" %}
+{% block title %}{{ "New " }}{{ activity.name }}{{" session"}}{% endblock %}
+
+
+{% block content %}
+<h1>Create new Time Log</h1>
+<p>{{activity.name}}</p>
+<form action="newTimeLog/" method="post">
+    <label for="startTime">
+        Start Time
+        <input type="datetime-local" name="startTime">
+    </label>
+    <label for="endTime">
+        End Time
+        <input type="datetime-local" name="endTime">
+    </label>
+    <button>Save</button>
+</form>
+{% endblock %}

@@ -1,0 +1,47 @@
+body {
+    background-color: blueviolet;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.activityBox {
+    background-color: cadetblue;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    border-radius: 15px;
+}
+
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+    color: black;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: lightpink;
+}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}

@@ -1,0 +1,30 @@
+{% extends "core/generic.html" %}
+{% block title %}{{ activity.name }}{% endblock %}
+
+
+{% block content %}
+<h1>Activity page</h1>
+{{activity.name}}
+
+<br>
+<br>
+<table>
+    <tr>
+        <th>Start</th>
+        <th>End</th>
+        <th>Time Spent</th>
+    </tr>
+    {% for timeLog in timeLogs %}
+    <tr>
+        <td>{{timeLog.start_time}}</td>
+        <td>{{timeLog.end_time}}</td>
+        <td>{{timeLog.time_spent}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+<form action="createTimeLog/" method="post">
+    <button>Add session</button>
+</form>
+{% endblock %}

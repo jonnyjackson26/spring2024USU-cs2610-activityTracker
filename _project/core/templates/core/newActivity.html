@@ -1,0 +1,16 @@
+{% extends "core/generic.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+
+{% block content %}
+<h1>Create new Activity</h1>
+<form action="createNewActivity/" method="post">
+    <label for="name">
+        name
+        <input type="text" name="name">
+    </label>
+    <button>Save</button>
+</form>
+
+
+{% endblock %}
